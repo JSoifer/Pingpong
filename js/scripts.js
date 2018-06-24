@@ -1,9 +1,15 @@
 var numberList = []
 var pingpong = (function(number1) {
-  if (isNAN(number1)) {
+  if (isNaN(number1)) {
     alert("Enter a number");
-  } else if (number1 % 3 === 0); {
-    numberList.push("ping");
+  } else {
+    for (index = 0; index<= number1; index +=1); {
+    var total = index += 1
+    numberList.push(total);
+    $(".result").show(numberList);
+  };
+
+    //numberList.push("ping");
 
   };
 });
@@ -13,7 +19,7 @@ var pingpong = (function(number1) {
 
 
 $(document).ready(function() {
-  $("#ping-pong form").submit(function(event) {
+  $("#ping-pong").submit(function(event) {
     event.preventDefault();
     var number1 = parseInt($("input#number").val());
   //  var result = function(number1);
