@@ -1,17 +1,15 @@
-var numberList = []
-var pingpong = (function(number1) {
-  if (isNaN(number1)) {
-    alert("Enter a number");
-  } else {
-    for (index = 0; index<= number1; index +=1); {
-    var total = index += 1
-    numberList.push(total);
-    $(".result").show(numberList);
+var pingPong = (function(number1) {
+  var numberList = []
+
+    for ( var index = 1; index <= number1; index ++);{
+  //} else {
+    numberList.push(index);
+
   };
 
     //numberList.push("ping");
 
-  };
+
 });
 
 
@@ -19,11 +17,15 @@ var pingpong = (function(number1) {
 
 
 $(document).ready(function() {
-  $("#ping-pong").submit(function(event) {
-    event.preventDefault();
+  $("form#ping-pong").submit(function(event) {
     var number1 = parseInt($("input#number").val());
-  //  var result = function(number1);
-  //  $("#result").show(result);
+    if (isNaN(number1)) {
+      alert("Enter a number");
+    }
+    var returnedArray = pingPong(number1);
+    $("#result").show();
   pingpong(numberList);
+  event.preventDefault();
+
   });
 });
