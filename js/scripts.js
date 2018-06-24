@@ -1,8 +1,11 @@
+var numberList = []
 var pingpong = (function(number1) {
   if (isNAN(number1)) {
     alert("Enter a number");
-  } else if (number1 % 3 === 0);
-    alert("Ping");
+  } else if (number1 % 3 === 0); {
+    numberList.push("ping");
+
+  };
 });
 
 
@@ -10,11 +13,11 @@ var pingpong = (function(number1) {
 
 
 $(document).ready(function() {
-  $("form#ping-Pong").submit(function(event) {
+  $("#ping-pong form").submit(function(event) {
     event.preventDefault();
     var number1 = parseInt($("input#number").val());
-    var numberList = []
   //  var result = function(number1);
-    $("#result").show(result);
+  //  $("#result").show(result);
+  pingpong(numberList);
   });
 });
