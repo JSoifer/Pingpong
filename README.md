@@ -9,9 +9,16 @@ code review project #3 using javascript arrays and looping
 * _no set up needed_
 * _open in browser_
 
+## Specs
+
+_Count up to an inputted number: Input 2  Output [1,2]_
+_If divisible by 3, replace with "ping": Input 3 Output [1,2,ping]_
+_If divisible by 5, replace with "pong": Input 5 Output [1,2,ping,4,pong]_
+_If divisible by 15, replace with "pingpong": Input 15 Output [1,2,ping,3,pong,ping,7,8,ping,pong,11,ping,13,14,pingpong]_
+
 ## Known Bugs
 
-_It does not currently work_
+_No known bugs_
 
 ## Support and contact details
 
