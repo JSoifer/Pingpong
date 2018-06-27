@@ -8,6 +8,7 @@ code review project #3 using javascript arrays and looping
 
 * _no set up needed_
 * _open in browser_
+*_https://jsoifer.github.io/Pingpong_
 
 ## Specs
 
