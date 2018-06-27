@@ -1,14 +1,15 @@
 var pingPong = (function(number1) {
-  var numberList = []
+  var numberList = [];
 
-    for ( var i = 1; i <= number1; i ++);{
-      if (i % 3 === 0 && i % 5 !== 0) {
+    for (var i = 1; i <= number1; i +=1) {
+
+      if ((i % 3 === 0) && (i % 5 !== 0)) {
         numberList.push("ping");
       }
-      else if (i % 5 === 0 && i % 3 !== 0) {
+      else if ((i % 5 === 0) && (i % 3 !== 0)) {
         numberList.push("pong");
       }
-      else if (i % 3 === 0 && i % 5 === 0 ) {
+      else if ((i % 3 === 0) && (i % 5 === 0 )) {
         numberList.push("pingpong");
       }
       else {
@@ -16,7 +17,6 @@ var pingPong = (function(number1) {
       }
   };
   return numberList;
-
 
 });
 
@@ -36,9 +36,9 @@ $(document).ready(function() {
 
     var returnedNumberList = pingPong(number1);
     returnedNumberList.forEach(function(listItem) {
-     $("<li>" + listItem + "</li>").append("#result");
+     $("#result").append("<li>" + listItem + "</li>");
    });
-    //$("#result").show();
+  //$("#result").show();
     //pingPong(numberList);
     event.preventDefault();
 
